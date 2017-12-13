@@ -5,10 +5,12 @@
 var lordofRingsCharacters = ["Gandalf", "Aaragon", "Frodo", "Samwise",
 	 "Legolas", "Gimli", "Boromir","Sauron", "Gollum", "Nazgul", "Saruman" ];
 
+//Init  Function 
 
 var score = 7;
 var maximumGuess = 7;  
 var char = ""; 
+
 var Hangman_game = {
 	
 
@@ -79,7 +81,7 @@ var Hangman_game = {
 var selectedCharacter = Hangman_game.pickCharacter();
 console.log(selectedCharacter);
 Hangman_game.displayPlaceholder(selectedCharacter);
-Hangman_game.updateScore();
+
 document.onkeyup = function(e){
 				char = e.key
 				var isNewAlphabet = Hangman_game.isNewAlphabet(char, selectedCharacter ); 
